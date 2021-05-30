@@ -62,15 +62,47 @@
 			children = (
 				5B919D4026639B7900D775AC /* AppDelegate.swift */,
 				5B919D4226639B7900D775AC /* SceneDelegate.swift */,
-				5B919D4426639B7900D775AC /* ViewController.swift */,
-				5B919D542663A49100D775AC /* CompilerService.swift */,
-				5B919D582663AF4D00D775AC /* CompilerDataCollection.swift */,
-				5B919D4626639B7900D775AC /* Main.storyboard */,
+				5B919D5C2663E6B900D775AC /* Controllers */,
+				5B919D5B2663E6B400D775AC /* Services */,
+				5B919D5A2663E6AE00D775AC /* Models */,
+				5B919D5D2663E6C000D775AC /* Views */,
 				5B919D4926639B7A00D775AC /* Assets.xcassets */,
 				5B919D4B26639B7A00D775AC /* LaunchScreen.storyboard */,
 				5B919D4E26639B7A00D775AC /* Info.plist */,
 			);
 			path = compilerTest;
+			sourceTree = "<group>";
+		};
+		5B919D5A2663E6AE00D775AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B919D582663AF4D00D775AC /* CompilerDataCollection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B919D5B2663E6B400D775AC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5B919D542663A49100D775AC /* CompilerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5B919D5C2663E6B900D775AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B919D4426639B7900D775AC /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B919D5D2663E6C000D775AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B919D4626639B7900D775AC /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

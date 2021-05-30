@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet weak var codeField: UITextView!
     @IBOutlet weak var outputField: UITextView!
     
@@ -31,26 +30,20 @@ class ViewController: UIViewController {
         let codeTyped = codeField.text
         
         compilerService.compileCode(code: codeTyped!)
-        
     }
     
 }
 
 extension ViewController : UITextViewDelegate {
-    
     @objc func endEditing(){
         DispatchQueue.main.async {
             self.codeField.resignFirstResponder()
         }
     }
-    
 }
 
 extension ViewController : CompilerServiceDelegate {
     func updateUI(result: String, output: String) {
         outputField.text = "\(result)\n\n\(output)"
     }
-    
-    
-    
 }
